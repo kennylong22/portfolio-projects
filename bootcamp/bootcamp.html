@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webDevCamp</title>
+    <link rel="stylesheet" href="bootcamp.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav">
+        <a href="#" class="nav__logo"><i class="fas fa-laptop-code"></i>webDevCamp</a>
+        <ul class="nav__list">
+          <li class="nav__list-item"><a href="#curriculum" class="nav__link">Curriculum</a></li>
+          <li class="nav__list-item"><a href="#pricing" class="nav__link">Pricing</a></li>
+          <li class="nav__list-item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+    </div>
+      <div class="header__info">
+        <h2 class="header__title">webDevCamp</h2>
+        <p class="header__text">Learn Web Development the Right Way</p>
+        <a href="#curriculum"><button class="header__btn">Learn More</button></a>
+      </div>
+    </header>
+    <main>
+      <section class="curriculum" id="curriculum">
+        <h2 class="curriculum__title">Curriculum</h2>
+        <div class="curriculum__grid">
+            <div class="curriculum__grid-item">
+              <div>
+                <i class="fab fa-html5 fa-fw curriculum__icon curriculum__icon--html"></i>
+              </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In et nam iusto nesciunt, reiciendis atque!</p>
+            </div>
+            <div class="curriculum__grid-item">
+              <div>
+                <i class="fab fa-css3-alt fa-fw curriculum__icon curriculum__icon--css"></i>
+              </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nam recusandae, porro ipsa reiciendis molestiae!</p>
+              </div>
+              <div class="curriculum__grid-item">
+                <div>
+                  <i class="fab fa-bootstrap fa-fw curriculum__icon curriculum__icon--bootstrap"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corporis, facere qui labore mollitia ea.</p>
+              </div>
+              <div class="curriculum__grid-item">
+                <div class="js-icon-container">
+                  <div class="js-icon-white-top"></div>
+                  <div class="js-icon-white-left"></div>
+                  <div class="js-icon-white-bottom"></div>
+                  <div class="js-icon-white-right"></div>
+                  <i class="fab fa-js fa-fw curriculum__icon curriculum__icon--js"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptates maxime sapiente in, aliquam laudantium!</p>
+              </div>
+              <div class="curriculum__grid-item">
+                <div>
+                  <i class="fab fa-react fa-fw curriculum__icon curriculum__icon--react"></i>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius blanditiis recusandae qui expedita accusantium. Odio?</p>
+              </div>
+            <div class="curriculum__grid-item">
+              <div>
+                <i class="fab fa-node-js fa-fw curriculum__icon curriculum__icon--node"></i>
+              </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, labore incidunt maiores totam voluptatem autem.</p>
+            </div>
+        </div>
+        <div class="curriculum__btn-container">
+            <button class="curriculum__btn">Learn More</button>
+        </div>
+      </section>
+      <section class="payment-plans-section" id="pricing">
+        <div class="payment-plans">
+          <div class="payment-plan">
+            <div class="payment-plan__deal">
+              Save 5%
+            </div>
+            <div class="payment-plan__price">
+              <p class="payment-plan__original-price">$2500</p>
+              <p class="payment-plan__new-price">$2375</p>
+            </div>
+            <div class="payment-plan__price-line-break"></div>
+            <div class="payment-plan__description">
+              <p class="payment-plan__pay-period">Down Payment</p>
+              <p class="payment-plan__payment-description">Pay $1000 today, followed by 12 monthly payments of $114.58.</p>
+            </div>
+            <div class="payment-plan__btn-container">
+              <button class="payment-plan__btn">Enroll Today</button>
+            </div>
+          </div>
+          <div class="payment-plan payment-plan__accent">
+            <div class="payment-plan__deal">
+              Save 10%
+            </div>
+            <div class="payment-plan__price">
+              <p class="payment-plan__original-price">$2500</p>
+              <p class="payment-plan__new-price">$2250</p>
+            </div>
+            <div class="payment-plan__price-line-break"></div>
+            <div class="payment-plan__description">
+              <p class="payment-plan__pay-period">Pay Upfront</p>
+              <p class="payment-plan__payment-description">Full, immediate payment saves 10% on tuition costs.</p>
+            </div>
+            <div class="payment-plan__btn-container payment-plan__btn-container--accent">
+              <button class="payment-plan__btn enroll-accent">Enroll Today</button>
+            </div>
+          </div>
+          <div class="payment-plan">
+            <div class="payment-plan__deal">
+              Pay Nothing Today
+            </div>
+            <div class="payment-plan__price">
+              <p class="payment-plan__new-price">$2500</p>
+            </div>
+            <div class="payment-plan__price-line-break"></div>
+            <div class="payment-plan__description">
+              <p class="payment-plan__pay-period">Pay Later</p>
+              <p class="payment-plan__payment-description">Pay $0 upfront and defer to 12 monthly payments of $208.33.</p>
+            </div>
+            <div class="payment-plan__btn-container">
+              <button class="payment-plan__btn">Enroll Today</button>
+            </div>
+          </div>
+          <button class="payment-plan__btn payment-plan__btn--sm">Enroll Today</button>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2 class="contact__header">Contact</h2>
+        <form class="form">
+          <div class="form__name">
+            <label for="name">Name</label>
+            <input type="text" placeholder="name" id="name" class="form__text-input">
+          </div>
+          <div class="form__email">
+            <label for="email">Email</label>
+            <input type="text" placeholder="email" id="email" class="form__text-input">
+          </div>
+          <div class="form__message">
+            <label for="message">Message</label>
+            <textarea placeholder="message" id="message" class="form__textarea"></textarea>
+          </div>
+          <button type="submit" class="form__submit-btn">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>webDevCamp &copy; 2022</p>
+    </footer>
+  </body>
+</html>
