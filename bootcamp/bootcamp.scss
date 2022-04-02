@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header {
+    min-height: 100vh;
+}
+
+/* Navbar */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(60deg, #111, #333);
+    border-bottom: 2px solid #387ff2;
+
+    &__logo, &__link {
+        font-size: 1.5rem;
+        color: white;
+    }
+    
+    &__logo {
+        margin: auto 0;
+        margin-left: 2rem;
+        text-decoration: none;
+    }
+    
+    &__logo i {
+        margin-right: .25rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 1.25rem;
+
+        &:hover {
+            color: #AAA;
+        }
+    }
+
+    &__list {
+        display: flex;
+        list-style-type: none;
+        margin-right: 2rem;
+    }
+
+    &__list-item {
+        margin-left: 2rem;
+    }
+}
+
+/* Navbar media queries */
+
+@media (max-width: 570px) {
+    .nav {
+        flex-direction: column;
+
+        &__logo {
+            margin: 0;
+            margin-left: 1rem;
+            margin-top: 1rem;
+        }
+
+        &__list {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0;
+        }
+
+        &__list-item {
+            padding: .5rem 0;
+            margin-left: 1rem;
+        }
+    }
+}
+
+@media (min-width: 571px) and (max-width: 610px) {
+    .nav__logo i {
+        display: none;
+    }
+}
+
+/* Header */
+
+.header {
+    &__info {
+        background-image: url('img/bootcamp-background.jpg');
+        background-size: cover;
+        background-position: center 10%;
+        min-height: 100vh;
+        position: relative;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 2rem;
+        text-shadow: 2px 2px 2px #000;
+    }
+
+    &__text {
+        font-size: 1.25rem;
+        text-shadow: 1px 1px 1px #000;
+    }
+
+    &__btn {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        font-size: 1.25rem;
+        padding: 1rem 2rem;
+        border-radius: 5px;
+        border: 1px solid #DDD;
+        outline: none;
+        transition: all ease .3s;
+
+        &:hover {
+            background-color: #fff;
+            color: black;
+            cursor: pointer;
+        }
+    }
+}
+
+/* Curriculum section */
+
+.curriculum {
+
+    &__title {
+        text-align: center;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(auto, 500px));
+        grid-gap: 20px;
+        justify-content: center;
+        position: relative;
+        width: 95%;
+        margin: 0 auto;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            border-radius: 5px;
+
+            &:hover {
+                box-shadow: 0 0 5px #aaa;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__icon {
+        font-size: 7rem;
+        margin-right: 1rem;
+
+        &--html {
+            color: #f06529;
+        }
+
+        &--css {
+            color: #2965f1;
+        }
+
+        &--bootstrap {
+            color: #563d7c;
+        }
+
+        &--js {
+            color: #f0db4f;
+            background-color: black;
+        }
+
+        &--react {
+            color: #61DBFB;
+        }
+        
+        &--node {
+            color: 	#3c873a;
+        }
+    }
+
+    &__btn-container {
+        width: 100%;
+    }
+    
+    &__btn {
+        background-color: white;
+        color: black;
+        font-size: 1.25rem;
+        padding: 1rem 2rem;
+        border-radius: 5px;
+        border: 1px solid black;
+        outline: none;
+        margin: 2rem auto;
+        display: block;
+        transition: all ease .3s; 
+        position: relative;
+
+        &:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media (max-width: 800px) {
+    .curriculum__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Creating whitespace around js logo */
+
+.js-icon-container {
+    position: relative;
+}
+
+.js-icon-white-top {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    height: 20px;
+}
+
+.js-icon-white-left {
+    position: absolute;
+    top: 0;
+    left: -5px;
+    background-color: white;
+    width: 27px;
+    height: 100%;
+}
+
+.js-icon-white-bottom {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    height: 14px;
+}
+
+.js-icon-white-right {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    background-color: white;
+    width: 24px;
+    height: 100%;
+}
+
+/* Payment Plans */
+
+.payment-plans {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(60deg, #111, #333);
+    height: 500px;
+}
+
+.payment-plan {
+    border: 1px solid black;
+    height: 80%;
+    background-color: #387ff2;
+    color: white;
+    margin: auto 0;
+    transition: transform ease .5s;
+    position: relative;
+
+    &__accent {
+        height: 90%;
+    }
+
+    &__deal {
+        margin-top: 1rem;
+        margin-left: 2rem;
+        font-size: 1.5rem;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__original-price {
+        color: #ddd;
+        font-size: 1.25rem;
+        text-decoration: line-through;
+        margin-right: .5rem;
+    }
+
+    &__new-price {
+        font-size: 2rem;
+    }
+
+    &__price-line-break {
+        background-color: white;
+        height: 2px;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    &__description {
+        text-align: center;
+    }
+
+    &__payment-description {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    &__btn-container {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        right: 0;
+
+        &--accent {
+            bottom: 80px;
+        }
+    }
+
+    &__btn {
+        background-color: white;
+        color: black;
+        border: none;
+        padding: 1rem 1.5rem;
+        font-size: 1.25rem;
+        outline: none;
+        transition: all ease .5s;
+
+        &:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        &--sm {
+            display: none;
+
+            &:hover {
+                background-color: white;
+                color: black;
+                border: none;
+            }
+        }
+    }
+}
+
+/* Contact Form */
+
+.contact {
+
+    &__header {
+        text-align: center;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__text-input {
+        height: 1.5rem;
+        min-width: 250px;
+    }
+
+    &__textarea {
+        min-height: 75px;
+        max-height: 200px;
+        min-width: 250px;
+        max-width: 250px;
+    }
+
+    &__name, 
+    &__email, 
+    &__message {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    &__name label, 
+    &__email label, 
+    &__message label {
+        font-size: 1.5rem;
+        margin: 0 auto;
+        margin-bottom: .5rem;
+    }
+
+    &__submit-btn {
+        padding: 1rem 2rem;
+        margin-bottom: 20px;
+        font-size: 1.25rem;
+        background-color: #387ff2;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+/* Footer */
+
+.footer {
+    text-align: center;
+    color: white;
+    background: linear-gradient(60deg, #111, #333);
+    padding: 1.5rem;
+    font-size: 1.5rem;
+}
+
+/* Media queries */
+
+@media (min-width: 500px) and (max-width: 1500px) {
+    .payment-plan {
+        width: 25%;
+    }
+}
+
+@media (max-width: 750px) {
+    .payment-plans {
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+
+    .payment-plan {
+        width: 75%;
+        margin: 5% auto;
+        padding: 2rem;
+
+        &__accent {
+            order: -1;
+        }
+    
+        &__btn-container {
+            opacity: 0;
+            cursor: none;
+            pointer-events: none;
+        }
+
+        &__btn {
+            &--sm {
+                display: block;
+                margin-bottom: 3rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) and (max-width: 750px) {
+    .payment-plan {
+        height: 27%;
+        padding: 1rem;
+
+        &:first-child {
+            margin: 15px 0;
+        }
+        
+        &__pay-period {
+            font-size: 2rem;
+        }
+    
+        &__payment-description {
+            font-size: 1.5rem;
+        }
+    
+        &__accent {
+            height: 27%;
+        }
+    
+        &__deal {
+            margin-top: .5rem;
+            margin-left: 1rem;
+            font-size: 1.5rem;
+        }
+    
+        &__new-price {
+            font-size: 2rem;
+            margin: 1rem 0;
+        }
+    
+        &__pay-period {
+            margin: 1rem auto;
+        }
+    
+        &__btn-container {
+            display: flex;
+            justify-content: center;
+        }
+    
+        &__btn {
+            padding: 1rem 1.5rem;
+            font-size: 1.25rem;
+            margin-top: 2rem;
+        }
+        
+        &__btn-accent {
+            margin-top: 2rem;
+        }
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .payment-plan__deal {
+        margin: 0;
+    }
+
+    .payment-plan__new-price {
+        margin: 1rem 0;
+    }
+
+    .payment-plan__pay-period {
+        font-size: 1.5rem;
+        margin: 1rem auto;
+    }
+}
+
+@media (min-width: 750px) {
+    .payment-plan:hover {
+        transform: scale(1.02);
+    }
+}
