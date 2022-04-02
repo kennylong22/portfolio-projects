@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin-bottom: 50px;
+}
+
+.container {
+    width: 75%;
+    margin:  0 auto;
+}
+
+[tabindex]:focus {
+    background-color: #f7f4df;
+}
+
+.section-padding {
+    padding: 20px;
+}
+
+
+/* Header */
+header {
+    border-bottom: 1px solid #aaa;
+    padding: 10px 0;
+}
+/* End of Header */
+
+/* Radio Button Styles */
+.question__radio-btn-container {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #444;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio-btn {
+    display: none;
+}
+
+.question__checked-btn {
+    transform: scale(0);
+    transition: transform .2s ease;
+    height: calc(100% - 6px);
+    width: calc(100% - 6px);
+    border-radius: 50%;
+    background-color: #444;
+}
+
+.radio-btn:checked + .question__checked-btn {
+    transform: scale(1);
+}
+/* End of Radio Button Styles */
+
+/* Input Fields */
+.user-info {
+    border-bottom: 1px solid #aaa;
+
+    & input {
+        padding: .5rem .3rem;
+        border-radius: 5px;
+        border: 1px solid #aaa;
+        margin: 5px 0;
+    }
+
+    &__name,
+    &__email,
+    &__phone-num,
+    &__date-of-birth {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        width: 100%;
+    }
+
+    &__email,
+    &__phone-num,
+    &__date-of-birth {
+        width: 20%;
+    }
+
+    &__name-inputs {
+        display: flex;
+    }
+
+    &__first-name-container,
+    &__last-name-container,
+    &__email-container,
+    &__phone-num-container,
+    &__date-of-birth-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__first-name-container,
+    &__last-name-container {
+        width: 20%;
+    }
+
+    &__first-name-container {
+        margin-right: 50px;
+    }
+}
+
+/* End of Input Fields */
+
+/* Questions Section */
+.questions {
+    border-bottom: 1px solid #aaa;
+}
+
+.question {
+
+    &__radio-btns-container {
+        margin-top: 15px;
+    }
+
+    &__radio-btn {
+        display: flex;
+        margin: 10px 0;
+        align-items: center;
+    }
+
+    &__radio-btn .question__radio-btn-container {
+        margin-right: 5px;
+    }
+}
+
+/* End of Questions Section */
+
+/*  Grid */
+.symptoms-grid-wrapper {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #aaa;
+}
+
+.symptoms-grid {
+    display: grid;
+    grid-template-areas:
+    '.. .. .. .. .. .. yes no'
+    's1 s1 s1 s1 s1 s1 s1--yes s1--no'
+    's2 s2 s2 s2 s2 s2 s2--yes s2--no'
+    's3 s3 s3 s3 s3 s3 s3--yes s3--no'
+    's4 s4 s4 s4 s4 s4 s4--yes s4--no'
+    's5 s5 s5 s5 s5 s5 s5--yes s5--no'
+    's6 s6 s6 s6 s6 s6 s6--yes s6--no'
+    's7 s7 s7 s7 s7 s7 s7--yes s7--no';
+    grid-template-columns: repeat(8, 1fr);
+    width: 50%;
+    grid-gap: 1px;
+    margin-top: 20px;
+}
+
+.yes,
+.no,
+.symptom__1,
+.symptom__2,
+.symptom__3,
+.symptom__4,
+.symptom__5,
+.symptom__6,
+.symptom__7 {
+    background-color: #ddd;
+    padding: .25rem 0;
+    outline: 1px solid black;
+    border-collapse: collapse;
+}
+
+.symptoms-grid p {
+    padding: .3rem;
+}
+
+.symptom-input-container {
+    outline: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.yes,
+.no {
+    text-align: center;
+}
+
+.yes {
+    grid-area: yes;
+}
+
+.no {
+    grid-area: no;
+}
+
+.symptom__1 {
+    grid-area: s1;
+}
+
+.symptom__1--yes {
+    grid-area: s1--yes;
+}
+
+.symptom__1--no {
+    grid-area: s1--no;
+}
+
+.symptom__2 {
+    grid-area: s2;
+}
+
+.symptom__2--yes {
+    grid-area: s2--yes;
+}
+
+.symptom__2--no {
+    grid-area: s2--no;
+}
+
+.symptom__3 {
+    grid-area: s3;
+}
+
+.symptom__3--yes {
+    grid-area: s3--yes;
+}
+
+.symptom__3--no {
+    grid-area: s3--no;
+}
+
+.symptom__4 {
+    grid-area: s4;
+}
+
+.symptom__4--yes {
+    grid-area: s4--yes;
+}
+
+.symptom__4--no {
+    grid-area: s4--no;
+}
+
+.symptom__5 {
+    grid-area: s5;
+}
+
+.symptom__5--yes {
+    grid-area: s5--yes;
+}
+
+.symptom__5--no {
+    grid-area: s5--no;
+}
+
+.symptom__6 {
+    grid-area: s6;
+}
+
+.symptom__6--yes {
+    grid-area: s6--yes;
+}
+
+.symptom__6--no {
+    grid-area: s6--no;
+}
+
+.symptom__7 {
+    grid-area: s7;
+}
+
+.symptom__7--yes {
+    grid-area: s7--yes;
+}
+
+.symptom__7--no {
+    grid-area: s7--no;
+}
+
+/* End of Symptoms Grid */
+
+/* Allergies Textarea */
+.allergies-container {
+    border-bottom: 1px solid #aaa;
+}
+
+.allergies {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.allergies textarea {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 45%;
+    max-width: 100%;
+    min-height: 125px;
+    max-height: 200px;
+    padding: .3rem;
+}
+/* End of Allergies Textarea */
+
+/* Sumbit Section */
+.submit p {
+    margin-bottom: 10px;
+}
+
+.submit input {
+    padding: .5rem .3rem;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    width: 250px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.submit button {
+    padding: .75rem 2.5rem;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+
+/* End of Sumbit Section */
+
+/* Input Fields Media Queries */
+
+@media (min-width: 1300px) and (max-width: 1600px) {
+    .user-info {
+        &__first-name-container,
+        &__last-name-container {
+            width: 25%;
+        }
+    
+        &__email,
+        &__phone-num,
+        &__date-of-birth {
+            width: 25%;
+        }
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+    .user-info {
+        &__first-name-container,
+        &__last-name-container {
+            width: 30%;
+    }
+
+        &__email,
+        &__phone-num,
+        &__date-of-birth {
+            width: 30%;
+        }
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    .user-info {
+        &__first-name-container,
+        &__last-name-container {
+            width: 35%;
+    }
+
+        &__email,
+        &__phone-num,
+        &__date-of-birth {
+            width: 35%;
+        }
+    }
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+    .user-info {
+        &__first-name-container,
+        &__last-name-container {
+            width: 45%;
+    }
+
+        &__email,
+        &__phone-num,
+        &__date-of-birth {
+            width: 45%;
+        }
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .user-info {
+        &__name-inputs {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &__first-name-container,
+        &__last-name-container {
+            width: 100%;
+        }
+    
+        &__email,
+        &__phone-num,
+        &__date-of-birth {
+            width: 100%;
+        }
+    }
+}
+
+/* Input Fields Media Queries */
+
+/* Symptoms Grid and Allergies Textarea Media Queries */
+
+@media (min-width: 1000px) and (max-width: 1600px) {
+    .symptoms-grid,
+    .allergies {
+        width: 50%;
+    }
+}
+
+@media (min-width: 850px) and (max-width: 1000px) {
+    .symptoms-grid,
+    .allergies  {
+        width: 60%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 850px) {
+    .symptoms-grid,
+    .allergies  {
+        width: 70%;
+    }
+}
+
+@media (Min-width: 450px) and (max-width: 700px) {
+    .symptoms-grid,
+    .allergies  {
+        width: 80%;
+    }
+}
+
+@media (max-width: 450px) {
+    .symptoms-grid {
+        grid-template-areas:
+        '.. .. .. yes no'
+        's1 s1 s1 s1--yes s1--no'
+        's2 s2 s2 s2--yes s2--no'
+        's3 s3 s3 s3--yes s3--no'
+        's4 s4 s4 s4--yes s4--no'
+        's5 s5 s5 s5--yes s5--no'
+        's6 s6 s6 s6--yes s6--no'
+        's7 s7 s7 s7--yes s7--no';
+        grid-template-columns: repeat(5, 1fr);
+        width: 105%;
+    }
+
+    .allergies {
+        width: 105%;
+    }
+}
+
+/* End of Symptoms Grid and Allergies Textarea Media Queries */
