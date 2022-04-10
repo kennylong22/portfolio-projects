@@ -296,7 +296,13 @@ body {
     }
 }
 
-@media (min-width: 800px) and (max-width: 1200px) {
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .ps-img {
+        width: 25%;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
     .ps-img {
         width: 30%;
     }
