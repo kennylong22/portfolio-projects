@@ -46,7 +46,7 @@ body {
 .projects,
 .contact {
     opacity: 0;
-    animation: section-appear 1.5s 2.75s ease forwards;
+    animation: section-appear 1.5s 3.5s ease forwards;
 }
 
 /* Navbar */
@@ -57,7 +57,7 @@ body {
     justify-content: center;
     padding: 0.25rem 0;
     opacity: 0;
-    animation: section-appear 1.5s 2.75s ease forwards;
+    animation: section-appear 1.5s 3.5s ease forwards;
 }
 
 .navbar-list-item:not(:last-child) {
@@ -92,7 +92,7 @@ body {
     position: relative;
     display: inline-block;
     color: transparent;
-    animation: text-appear 1.5s 1.25s ease forwards;
+    animation: text-appear 1.5s 1.5s ease forwards;
 }
 
 .hero-info__job {
@@ -101,7 +101,7 @@ body {
     padding-top: var(--hero-info-padding);
     position: relative;
     color: transparent;
-    animation: text-appear 1.5s 2.75s ease forwards;
+    animation: text-appear 1.5s 3.5s ease forwards;
 }
 
 .hero-info__name::before,
@@ -115,18 +115,18 @@ body {
 }
 
 .hero-info__name::before {
-    animation: text-reveal-to-right 1.5s 0.5s ease forwards;
+    animation: text-reveal-to-right 2s 0.5s ease forwards;
     left: 0;
 }
 
 .hero-info__job::before {
-    animation: text-reveal-to-left 1.5s 2s ease forwards;
+    animation: text-reveal-to-left 2s 2.5s ease forwards;
     right: 0;
 }
 
 .hero-desc {
     opacity: 0;
-    animation: section-appear 1.5s 2.75s ease forwards;
+    animation: section-appear 1.5s 3.5s ease forwards;
 }
 
 .hero-desc a {
@@ -142,7 +142,7 @@ body {
 
 .main {
     opacity: 0;
-    animation: section-appear 1.5s 2.75s ease forwards;
+    animation: section-appear 1.5s 3.5s ease forwards;
 }
 
 /* Skills section */
