@@ -155,6 +155,10 @@ body {
     .header {
         height: 100vh;
     }
+    
+    .header__info {
+        height: calc(100vh-54px);
+    }       
 }
 
 /* Curriculum section */
