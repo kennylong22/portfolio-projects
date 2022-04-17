@@ -149,6 +149,14 @@ body {
     }
 }
 
+/* Header Media Queries */
+
+@media (min-width: 850px) {
+    .header {
+        height: 100vh;
+    }
+}
+
 /* Curriculum section */
 
 .curriculum {
