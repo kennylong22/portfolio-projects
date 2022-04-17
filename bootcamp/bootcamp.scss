@@ -152,12 +152,8 @@ body {
 /* Header Media Queries */
 
 @media (min-width: 850px) {
-    .header {
-        height: 100vh;
-    }
-    
     .header__info {
-        height: calc(100vh-54px);
+        height: 500px;
     }       
 }
 
