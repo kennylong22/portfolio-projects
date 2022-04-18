@@ -1364,10 +1364,6 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 400px) {
-    .dropdown {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .email-top-text {
         font-size: 1rem;
         text-align: left;
