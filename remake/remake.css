@@ -1053,8 +1053,7 @@ body {
 
 @media (max-width: 730px) {
     .dropdown {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: none;
     }
 
     .dropdown .sale {
