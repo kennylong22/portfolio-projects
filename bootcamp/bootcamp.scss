@@ -482,9 +482,7 @@ body {
         }
     
         &__btn-container {
-            opacity: 0;
-            cursor: none;
-            pointer-events: none;
+            display: none;
         }
 
         &__btn {
