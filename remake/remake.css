@@ -370,6 +370,10 @@ body {
 
 .fifty-percent .fifty-hero {
     grid-area: hero;
+    background-image: url("img/50-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .fifty-percent .fifty-mens {
