@@ -1079,6 +1079,12 @@ body {
 
 /* Email Top Media Queries */
 
+@media (min-width: 1000px) and (max-width: 1300px) {
+    .email-top {
+        justify-content: center;
+    }
+}
+
 @media (min-width: 1440px) {
     .container, .fifty-percent {
         width: 70%;
