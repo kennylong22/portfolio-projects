@@ -1497,6 +1497,15 @@ body {
     .featured-product-btn {
         bottom: -50%;
     }
+    
+    .featured-product-desc,
+    .face-covering-desc {
+        margin-top: 5px;
+    }
+    
+    .face-covering-desc {
+        margin-bottom: 5px;
+    }
 
     .reviews-graphic {
         margin-left: 10px;
