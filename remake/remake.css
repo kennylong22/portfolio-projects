@@ -1464,11 +1464,11 @@ body {
         display: none;
     }
 
-    .header span.asterisk {
+    .banner-top span.asterisk {
         display: none;
     }
 
-    .header span.small-text {
+    .banner-top span.small-text {
         margin-left: 0;
     }
 
