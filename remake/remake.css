@@ -1451,3 +1451,65 @@ body {
 }
 
 /* End of Media Queries for featured products, face coverings, and shop clearance grids */
+
+/* Galaxy Fold Media Queries */
+
+@media (width: 280px) {
+    .email-top {
+        flex-direction: column;
+    }
+
+    .section-top .section-top-box .fa-search,
+    .section-top .section-top-box .user-info-cart {
+        display: none;
+    }
+
+    .header span.asterisk {
+        display: none;
+    }
+
+    .header span.small-text {
+        margin-left: 0;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .email-top-text {
+        font-size: 1rem;
+        margin: 10px auto;
+    }
+
+    .email-top-arrow .email-bold {
+        padding: 8px 32px;
+    }
+
+    .fifty-percent {
+        display: none;
+    }
+
+    .featured-product-price {
+        bottom: -20%;
+    }
+
+    .featured-product-btn {
+        bottom: -50%;
+    }
+
+    .reviews-graphic {
+        margin-left: 10px;
+    }
+
+    .shop-clearance-item-banner {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .featured-product-btn,
+    .face-covering-btn,
+    .shop-clearance-item-btn {
+        padding: 5px 7px;
+    }
+}
+
+/* End of Galaxy Fold Media Queries */
