@@ -1454,7 +1454,7 @@ body {
 
 /* Galaxy Fold Media Queries */
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
     .email-top {
         flex-direction: column;
         padding: 5px 0;
