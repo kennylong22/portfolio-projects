@@ -1457,6 +1457,7 @@ body {
 @media (width: 280px) {
     .email-top {
         flex-direction: column;
+        padding: 5px 0;
     }
 
     .section-top .section-top-box .fa-search,
