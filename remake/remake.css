@@ -1459,6 +1459,10 @@ body {
         flex-direction: column;
         padding: 5px 0;
     }
+    
+    .email-top .email-top-text-container {
+        text-align: left;
+    }
 
     .section-top .section-top-box .fa-search,
     .section-top .section-top-box .user-info-cart {
