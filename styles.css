@@ -29,7 +29,7 @@ body {
 }
 
 .section-margin {
-    margin: 50px auto;
+    margin: 100px auto;
 }
 
 .skills.section-margin {
@@ -270,7 +270,7 @@ body {
 
 @media (max-width: 1280px) {
     .section-margin {
-        margin: 3rem auto;
+        margin: 50px auto;
     }
 }
 
