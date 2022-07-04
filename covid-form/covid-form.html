@@ -12,195 +12,197 @@
       <h1>COVID-19 Vaccination Form</h1>
     </header>
     <main class="container">
-      <section class="user-info section-padding" tabindex="1">
-        <div class="user-info__name">
-          <h2>Name</h2>
-          <div class="user-info__name-inputs">
-            <div class="user-info__first-name-container">
-              <input id="first-name" type="text" />
-              <label for="first-name">First Name</label>
-            </div>
-            <div class="user-info__last-name-container">
-              <input id="last-name" type="text" />
-              <label for="last-name">Last Name</label>
-            </div>
-          </div>
-        </div>
-        <div class="user-info__email">
-          <h2>Email</h2>
-          <div class="user-info__email-container">
-            <input id="email" type="email" />
-            <label for="email">name@email.com</label>
-          </div>
-        </div>
-        <div class="user-info__phone-num">
-          <h2>Phone Number</h2>
-          <div class="user-info__phone-num-container">
-            <input id="phone" type="tel" placeholder="(000) 000-0000"/>
-            <label for="phone">Valid Phone Number</label>
-          </div>
-        </div>
-        <div class="user-info__date-of-birth">
-          <h2>Date of Birth</h2>
-          <div class="user-info__date-of-birth-container">
-            <input id="date-of-birth" type="date" />
-            <label for="date-of-birth">Date</label>
-          </div>
-        </div>
-      </section>
-      <section class="questions">
-          <div class="question section-padding" tabindex="2">
-            <p>Have you been in contact with somebody who has been 
-                diagnosed with COVID-19 or has had COVID-19 symptoms 
-                within the last 2 weeks?</p>
-            <div class="question__radio-btns-container">
-                <div class="question__radio-btn">
-                  <label class="question__radio-btn-container">
-                    <input id="exposure--yes" type="radio" name="covid-exposure" class="radio-btn">
-                    <span class="question__checked-btn"></span>
-                  </label>
-                  <label for="exposure--yes">Yes</label>
-                </div>
-                <div class="question__radio-btn">
-                  <label class="question__radio-btn-container">
-                    <input id="exposure--no" type="radio" name="covid-exposure" class="radio-btn">
-                    <span class="question__checked-btn"></span>
-                  </label>
-                  <label for="exposure--no">No</label>
-                </div>
+      <form>
+        <section class="user-info section-padding" tabindex="1">
+          <div class="user-info__name">
+            <h2>Name</h2>
+            <div class="user-info__name-inputs">
+              <div class="user-info__first-name-container">
+                <input id="first-name" type="text" required="required" />
+                <label for="first-name">First Name</label>
+              </div>
+              <div class="user-info__last-name-container">
+                <input id="last-name" type="text" required="required" />
+                <label for="last-name">Last Name</label>
+              </div>
             </div>
           </div>
-          <div class="question section-padding" tabindex="3">
-            <p>Have you traveled internationally within the last 2 weeks?</p>
-            <div class="question__radio-btns-container">
-                <div class="question__radio-btn">
-                  <label class="question__radio-btn-container">
-                    <input id="travel--yes" type="radio" name="international-travel" class="radio-btn">
-                    <span class="question__checked-btn"></span>
-                  </label>
-                <label for="travel--yes">Yes</label>
-                </div>
-                <div class="question__radio-btn">
-                  <label class="question__radio-btn-container">
-                    <input id="travel--no" type="radio" name="international-travel" class="radio-btn">
-                    <span class="question__checked-btn"></span>
-                  </label>
-                <label for="travel--no">No</label>
-                </div>
+          <div class="user-info__email">
+            <h2>Email</h2>
+            <div class="user-info__email-container">
+              <input id="email" type="email" required="required" />
+              <label for="email">name@email.com</label>
             </div>
           </div>
-      </section>
-      <section class="symptoms-grid-wrapper section-padding" tabindex="4">
-          <p>Have you experienced the following symptoms within the
-              last 2 weeks?</p>
-            <div class="symptoms-grid">
-                <h3 class="yes">Yes</h2>
-                <h3 class="no">No</h3>
-                <p class="symptom__1">Nausea/Vomiting</p>
-                <div class="symptom__1--yes symptom-input-container">
-                  <label class="question__radio-btn-container">
-                    <input type="radio" name="sympton-1-radio-btn" class="radio-btn">
-                    <span class="question__checked-btn"></span>
-                  </label>
-                </div>
-                <div class="symptom__1--no symptom-input-container">
-                  <label class="question__radio-btn-container">
-                    <input type="radio" name="sympton-1-radio-btn" class="radio-btn">
-                    <span class="question__checked-btn"></span>
-                  </label>
-                </div>
-                <p class="symptom__2">Fever</p>
-                <div class="symptom__2--yes symptom-input-container">
-                  <label class="question__radio-btn-container">
-                    <input type="radio" name="sympton-2-radio-btn" class="radio-btn">
-                    <span class="question__checked-btn"></span>
-                  </label>
-                </div>
-                <div class="symptom__2--no symptom-input-container">
-                  <label class="question__radio-btn-container">
-                    <input type="radio" name="sympton-2-radio-btn" class="radio-btn">
-                    <span class="question__checked-btn"></span>
-                  </label>
-                </div>
-                <p class="symptom__3">Cough</p>
-                <div class="symptom__3--yes symptom-input-container">
-                  <label class="question__radio-btn-container">
-                    <input type="radio" name="sympton-3-radio-btn" class="radio-btn">
-                    <span class="question__checked-btn"></span>
-                  </label>
-                </div>
-                <div class="symptom__3--no symptom-input-container">
-                  <label class="question__radio-btn-container">
-                    <input type="radio" name="sympton-3-radio-btn" class="radio-btn">
-                    <span class="question__checked-btn"></span>
-                  </label>
-                </div>
-                <p class="symptom__4">Diarrhea</p>
-                <div class="symptom__4--yes symptom-input-container">
-                  <label class="question__radio-btn-container">
-                    <input type="radio" name="sympton-4-radio-btn" class="radio-btn">
-                    <span class="question__checked-btn"></span>
-                  </label>
-                </div>
-                <div class="symptom__4--no symptom-input-container">
-                  <label class="question__radio-btn-container">
-                    <input type="radio" name="sympton-4-radio-btn" class="radio-btn">
-                    <span class="question__checked-btn"></span>
-                  </label>
-                </div>
-                <p class="symptom__5">Muscle Pain</p>
-                <div class="symptom__5--yes symptom-input-container">
-                  <label class="question__radio-btn-container">
-                    <input type="radio" name="sympton-5-radio-btn" class="radio-btn">
-                    <span class="question__checked-btn"></span>
-                  </label>
-                </div>
-                <div class="symptom__5--no symptom-input-container">
-                  <label class="question__radio-btn-container">
-                    <input type="radio" name="sympton-5-radio-btn" class="radio-btn">
-                    <span class="question__checked-btn"></span>
-                  </label>
-                </div>
-                <p class="symptom__6">Sore Throat</p>
-                <div class="symptom__6--yes symptom-input-container">
-                  <label class="question__radio-btn-container">
-                    <input type="radio" name="sympton-6-radio-btn" class="radio-btn">
-                    <span class="question__checked-btn"></span>
-                  </label>
-                </div>
-                <div class="symptom__6--no symptom-input-container">
-                  <label class="question__radio-btn-container">
-                    <input type="radio" name="sympton-6-radio-btn" class="radio-btn">
-                    <span class="question__checked-btn"></span>
-                  </label>
-                </div>
-                <p class="symptom__7">Loss of Taste or Smell</p>
-                <div class="symptom__7--yes symptom-input-container">
-                  <label class="question__radio-btn-container">
-                    <input type="radio" name="sympton-7-radio-btn" class="radio-btn">
-                    <span class="question__checked-btn"></span>
-                  </label>
-                </div>
-                <div class="symptom__7--no symptom-input-container">
-                  <label class="question__radio-btn-container">
-                    <input type="radio" name="sympton-7-radio-btn" class="radio-btn">
-                    <span class="question__checked-btn"></span>
-                  </label>
-                </div>
+          <div class="user-info__phone-num">
+            <h2>Phone Number</h2>
+            <div class="user-info__phone-num-container">
+              <input id="phone" type="tel" placeholder="(000) 000-0000" required="required"/>
+              <label for="phone">Valid Phone Number</label>
             </div>
-      </section>
-      <section class="allergies-container section-padding" tabindex="5">
-        <div class="allergies">
-          <label for="allergies-box">List anything that you are allergic to:</label>
-          <textarea id="allergies-box" placeholder="Type here..."></textarea>
-        </div>
-      </section>
-      <section class="submit section-padding" tabindex="6">
-        <p>By submitting this form I declare that the information above is accurate.</p>
-        <label for="today-date">Today's date</label>
-        <input type="date" id="today-date">
-        <button type="submit">Submit</button>
-      </section>
+          </div>
+          <div class="user-info__date-of-birth">
+            <h2>Date of Birth</h2>
+            <div class="user-info__date-of-birth-container">
+              <input id="date-of-birth" type="date" required="required" />
+              <label for="date-of-birth">Date</label>
+            </div>
+          </div>
+        </section>
+        <section class="questions">
+            <div class="question section-padding" tabindex="2">
+              <p>Have you been in contact with somebody who has been 
+                  diagnosed with COVID-19 or has had COVID-19 symptoms 
+                  within the last 2 weeks?</p>
+              <div class="question__radio-btns-container">
+                  <div class="question__radio-btn">
+                    <label class="question__radio-btn-container">
+                      <input id="exposure--yes" type="radio" name="covid-exposure" class="radio-btn">
+                      <span class="question__checked-btn"></span>
+                    </label>
+                    <label for="exposure--yes">Yes</label>
+                  </div>
+                  <div class="question__radio-btn">
+                    <label class="question__radio-btn-container">
+                      <input id="exposure--no" type="radio" name="covid-exposure" class="radio-btn">
+                      <span class="question__checked-btn"></span>
+                    </label>
+                    <label for="exposure--no">No</label>
+                  </div>
+              </div>
+            </div>
+            <div class="question section-padding" tabindex="3">
+              <p>Have you traveled internationally within the last 2 weeks?</p>
+              <div class="question__radio-btns-container">
+                  <div class="question__radio-btn">
+                    <label class="question__radio-btn-container">
+                      <input id="travel--yes" type="radio" name="international-travel" class="radio-btn">
+                      <span class="question__checked-btn"></span>
+                    </label>
+                  <label for="travel--yes">Yes</label>
+                  </div>
+                  <div class="question__radio-btn">
+                    <label class="question__radio-btn-container">
+                      <input id="travel--no" type="radio" name="international-travel" class="radio-btn">
+                      <span class="question__checked-btn"></span>
+                    </label>
+                  <label for="travel--no">No</label>
+                  </div>
+              </div>
+            </div>
+        </section>
+        <section class="symptoms-grid-wrapper section-padding" tabindex="4">
+            <p>Have you experienced the following symptoms within the
+                last 2 weeks?</p>
+              <div class="symptoms-grid">
+                  <h3 class="yes">Yes</h2>
+                  <h3 class="no">No</h3>
+                  <p class="symptom__1">Nausea/Vomiting</p>
+                  <div class="symptom__1--yes symptom-input-container">
+                    <label class="question__radio-btn-container">
+                      <input type="radio" name="sympton-1-radio-btn" class="radio-btn">
+                      <span class="question__checked-btn"></span>
+                    </label>
+                  </div>
+                  <div class="symptom__1--no symptom-input-container">
+                    <label class="question__radio-btn-container">
+                      <input type="radio" name="sympton-1-radio-btn" class="radio-btn">
+                      <span class="question__checked-btn"></span>
+                    </label>
+                  </div>
+                  <p class="symptom__2">Fever</p>
+                  <div class="symptom__2--yes symptom-input-container">
+                    <label class="question__radio-btn-container">
+                      <input type="radio" name="sympton-2-radio-btn" class="radio-btn">
+                      <span class="question__checked-btn"></span>
+                    </label>
+                  </div>
+                  <div class="symptom__2--no symptom-input-container">
+                    <label class="question__radio-btn-container">
+                      <input type="radio" name="sympton-2-radio-btn" class="radio-btn">
+                      <span class="question__checked-btn"></span>
+                    </label>
+                  </div>
+                  <p class="symptom__3">Cough</p>
+                  <div class="symptom__3--yes symptom-input-container">
+                    <label class="question__radio-btn-container">
+                      <input type="radio" name="sympton-3-radio-btn" class="radio-btn">
+                      <span class="question__checked-btn"></span>
+                    </label>
+                  </div>
+                  <div class="symptom__3--no symptom-input-container">
+                    <label class="question__radio-btn-container">
+                      <input type="radio" name="sympton-3-radio-btn" class="radio-btn">
+                      <span class="question__checked-btn"></span>
+                    </label>
+                  </div>
+                  <p class="symptom__4">Diarrhea</p>
+                  <div class="symptom__4--yes symptom-input-container">
+                    <label class="question__radio-btn-container">
+                      <input type="radio" name="sympton-4-radio-btn" class="radio-btn">
+                      <span class="question__checked-btn"></span>
+                    </label>
+                  </div>
+                  <div class="symptom__4--no symptom-input-container">
+                    <label class="question__radio-btn-container">
+                      <input type="radio" name="sympton-4-radio-btn" class="radio-btn">
+                      <span class="question__checked-btn"></span>
+                    </label>
+                  </div>
+                  <p class="symptom__5">Muscle Pain</p>
+                  <div class="symptom__5--yes symptom-input-container">
+                    <label class="question__radio-btn-container">
+                      <input type="radio" name="sympton-5-radio-btn" class="radio-btn">
+                      <span class="question__checked-btn"></span>
+                    </label>
+                  </div>
+                  <div class="symptom__5--no symptom-input-container">
+                    <label class="question__radio-btn-container">
+                      <input type="radio" name="sympton-5-radio-btn" class="radio-btn">
+                      <span class="question__checked-btn"></span>
+                    </label>
+                  </div>
+                  <p class="symptom__6">Sore Throat</p>
+                  <div class="symptom__6--yes symptom-input-container">
+                    <label class="question__radio-btn-container">
+                      <input type="radio" name="sympton-6-radio-btn" class="radio-btn">
+                      <span class="question__checked-btn"></span>
+                    </label>
+                  </div>
+                  <div class="symptom__6--no symptom-input-container">
+                    <label class="question__radio-btn-container">
+                      <input type="radio" name="sympton-6-radio-btn" class="radio-btn">
+                      <span class="question__checked-btn"></span>
+                    </label>
+                  </div>
+                  <p class="symptom__7">Loss of Taste or Smell</p>
+                  <div class="symptom__7--yes symptom-input-container">
+                    <label class="question__radio-btn-container">
+                      <input type="radio" name="sympton-7-radio-btn" class="radio-btn">
+                      <span class="question__checked-btn"></span>
+                    </label>
+                  </div>
+                  <div class="symptom__7--no symptom-input-container">
+                    <label class="question__radio-btn-container">
+                      <input type="radio" name="sympton-7-radio-btn" class="radio-btn">
+                      <span class="question__checked-btn"></span>
+                    </label>
+                  </div>
+              </div>
+        </section>
+        <section class="allergies-container section-padding" tabindex="5">
+          <div class="allergies">
+            <label for="allergies-box">List anything that you are allergic to:</label>
+            <textarea id="allergies-box" placeholder="Type here..." required="required"></textarea>
+          </div>
+        </section>
+        <section class="submit section-padding" tabindex="6">
+          <p>By submitting this form I declare that the information above is accurate.</p>
+          <label for="today-date">Today's date</label>
+          <input type="date" id="today-date" required="required">
+          <input type="submit">
+        </section>
+      </form>
     </main>
   </body>
 </html>
