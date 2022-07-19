@@ -42,13 +42,13 @@ body {
     font-size: 2rem;
 }
 
-.skills,
+/* .skills,
 .projects,
 .contact,
 .navbar-list {
     opacity: 0;
     animation: section-appear 1.5s 3.5s ease forwards;
-}
+} */
 
 /* Navbar */
 
@@ -90,8 +90,8 @@ body {
     padding-bottom: var(--hero-info-padding);
     position: relative;
     display: inline-block;
-    color: transparent;
-    animation: text-appear 1.5s 1.5s ease forwards;
+/*     color: transparent;
+    animation: text-appear 1.5s 1.5s ease forwards; */
 }
 
 .hero-info__job {
@@ -99,11 +99,11 @@ body {
     width: fit-content;
     padding-top: var(--hero-info-padding);
     position: relative;
-    color: transparent;
-    animation: text-appear 1.5s 3.5s ease forwards;
+/*     color: transparent;
+    animation: text-appear 1.5s 3.5s ease forwards; */
 }
 
-.hero-info__name::before,
+/* .hero-info__name::before,
 .hero-info__job::before {
     position: absolute;
     content: '';
@@ -111,22 +111,22 @@ body {
     height: 100%;
     width: 0;
     background-color: white;
-}
+} */
 
-.hero-info__name::before {
+/* .hero-info__name::before {
     animation: text-reveal-to-right 2s 0.5s ease forwards;
     left: 0;
-}
+} */
 
-.hero-info__job::before {
+/* .hero-info__job::before {
     animation: text-reveal-to-left 2s 2.5s ease forwards;
     right: 0;
-}
+} */
 
-.hero-desc {
+/* .hero-desc {
     opacity: 0;
     animation: section-appear 1.5s 3.5s ease forwards;
-}
+} */
 
 .hero-desc a {
     color: white;
@@ -139,10 +139,10 @@ body {
 
 /* End of hero section */
 
-.main {
+/* .main {
     opacity: 0;
     animation: section-appear 1.5s 3.5s ease forwards;
-}
+} */
 
 /* Skills section */
 
@@ -383,7 +383,7 @@ body {
 
 /* Animations */
 
-@keyframes text-reveal-to-right {
+/* @keyframes text-reveal-to-right {
     0% {
         width: 0;
         left: 0;
@@ -435,7 +435,7 @@ body {
     100% {
         opacity: 1;
     }
-}
+} */
 
 /* End of animations */
 
